@@ -4,7 +4,7 @@ import ReactMarkdown from 'react-markdown';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { a11yDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import { IoMdSend } from "react-icons/io";
-import { SpeedInsights } from "@vercel/speed-insights/next"
+
 import "./App.css";
 
 const App = () => {
@@ -115,7 +115,6 @@ const App = () => {
           <IoMdSend />
         </button>
       </div>
-      <SpeedInsights />
     </div>
   );
 };
