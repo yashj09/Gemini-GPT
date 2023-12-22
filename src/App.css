@@ -52,7 +52,7 @@
   right: 1px;
   transform: translateY(-50%);
   padding: 10px;
-  background-color: white;
+  background-color: transparent;
   /* color: #fff; */
   border: none;
   cursor: pointer;

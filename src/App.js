@@ -9,7 +9,7 @@ import { CiStar } from "react-icons/ci";
 import "./App.css";
 
 const App = () => {
-  const API_KEY = "AIzaSyDWYg7pwMwierXO_Nxq19in4C7NbuvBe8o";
+  const API_KEY = "AIzaSyDWYg7pwMwierXO_Nxq19in4C7NbuvBe8o"; // YOUR_API_KEY
   const genAI = new GoogleGenerativeAI(API_KEY);
 
   const [conversation, setConversation] = useState([]);
