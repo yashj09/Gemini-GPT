@@ -47,7 +47,6 @@
   transform: translateY(-50%);
   padding: 10px;
   background-color: transparent;
-  /* color: #fff; */
   border: none;
   cursor: pointer;
 }
@@ -108,13 +107,10 @@ textarea {
 }
 
 footer {
-  /*background: linear-gradient(135deg, #000319, #2b1c5f);*/
   padding-top: 1rem;
-  /* padding-bottom: 2rem; */
 }
 .custom-footer {
   width: 100%;
-  /* padding: 2rem 0; */
 }
 
 .custom-container {
@@ -127,7 +123,6 @@ footer {
   display: flex;
   justify-content: space-between;
   max-width: 280px;
-  /* margin: 2rem auto; */
 }
 
 .footer-icon {
@@ -137,7 +132,8 @@ footer {
   transition: color 0.2s ease;
 }
 
-.footer-icon:hover {
+.footer-icon:hover,
+.copyright:hover {
   color: rgb(16, 15, 15);
 }
 
@@ -147,7 +143,6 @@ footer {
   margin-top: 1.5rem;
   font-size: 0.875rem;
 }
-
 .github-button {
   position: fixed;
   top: 10px;
@@ -160,17 +155,17 @@ footer {
 .github-button a {
   margin-bottom: 10px;
   padding: 10px;
-  background-color: #b6b6b6;
-  color: #161515;
+  background-color: #f2f2f2;
+  color: #333333;
   text-decoration: none;
   border-radius: 5px;
   transition: background-color 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .github-button a:hover {
-  background-color: rgba(255, 255, 255, 0.744);
+  background-color: #dfdfdf;
 }
-
 @media only screen and (max-width: 700px) {
   .github-button a {
     display: none;

@@ -23,13 +23,6 @@ const App = () => {
       const response = await result.response;
       const generatedCode = response.text();
 
-      let text = '';
-      for await (const chunk of result.stream) {
-        const chunkText = chunk.text();
-        console.log(chunkText);
-        text += chunkText;
-      }
-
       const codeBlocks = generatedCode.split('```');
       const formattedBlocks = codeBlocks.map((block, index) => (
         index % 2 === 0 ? (
@@ -87,6 +80,7 @@ const App = () => {
 
   return (
     <div className="app">
+
       <div class="github-button">
         <a href="https://github.com/yashj09/Gemini-GPT" target="_blank">  <CiStar />Star this Repo</a>
       </div>
