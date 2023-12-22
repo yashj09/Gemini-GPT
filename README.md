@@ -22,7 +22,7 @@ Gemini GPT is an open-source AI chat bot powered by Google's Generative AI. Enga
    `git clone https://github.com/yashj09/Gemini-GPT.git`
 2. Get you api key from https://makersuite.google.com/app/apikey
    ![Alt text](image.png)
-   and replace with exciting api key
+   and replace with your api key
 3. Install dependencies:
    `npm install`
 4. Start the development server:

@@ -19,12 +19,6 @@
   height: 60vh;
 }
 
-@media only screen and (max-width: 600px) {
-  .chat-container {
-    width: 80vw;
-  }
-}
-
 .user-message {
   background-color: #d3f1f1;
   padding: 8px;
@@ -59,7 +53,7 @@
 }
 
 textarea {
-  height: 52px;
+  height: 10vh;
   width: 50vw;
   padding: 8px;
   background-color: transparent;
@@ -70,6 +64,15 @@ textarea {
   resize: none;
   overflow-y: hidden;
   max-height: 200px;
+}
+
+@media only screen and (max-width: 600px) {
+  textarea {
+    width: 70vw;
+  }
+  .chat-container {
+    width: 80vw;
+  }
 }
 
 .error-message {
