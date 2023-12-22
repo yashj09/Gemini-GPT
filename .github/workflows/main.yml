@@ -1,4 +1,4 @@
-name: GPT
+name: Build and Deploy
 
 on:
   push:
@@ -6,22 +6,28 @@ on:
       - main
 
 jobs:
-  your-job:
+  build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
+      - name: Checkout Repository
         uses: actions/checkout@v2
 
       - name: Set up Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v2
         with:
-          node-version: '14'
+          node-version: 14
 
-      - name: Install dependencies
+      - name: Install Dependencies
         run: npm install
 
-      - name: Build and deploy
+      - name: Build
+        run: npm run build
+
+      - name: Deploy
         env:
           REACT_APP_GOOGLE_API_KEY: ${{ secrets.AIzaSyDWYg7pwMwierXO_Nxq19in4C7NbuvBe8o }}
-          run: npm run build && npm run deploy
+        run: npm run deploy
+
+          
+        
