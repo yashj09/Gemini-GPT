@@ -1,0 +1,27 @@
+name: Store API Key in .env file
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Set up Node.js
+        uses: actions/setup-node@v2.4.0
+        with:
+          node-version: '14.x'
+      - name: Install dependencies
+        run: npm install
+      - name: Store API key in .env file
+        run: echo "REACT_APP_API_KEY=${{ secrets.API_KEY }}" >> .env
+      - name: Build and deploy
+        run: |
+          npm run build
+          npm run deploy
+        env:
+          REACT_APP_API_KEY: ${{ secrets.API_KEY }}
