@@ -54,7 +54,7 @@ const App = () => {
         { role: 'error', text: 'Error: Content blocked due to safety concerns.' },
       ]);
     }
-  }, [API_KEY, genAI, userInput]);
+  }, [genAI, userInput]);
 
   const handleKeyDown = useCallback((e) => {
     if (e.key === 'Enter' && userInput.trim() !== '') {
