@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect, useCallback, useMemo } from 'react';
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import ReactMarkdown from 'react-markdown';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
@@ -11,7 +11,7 @@ import "./App.css";
 const App = () => {
 
   const API_KEY = process.env.REACT_APP_GOOGLE_API_KEY; // YOUR_API_KEY from https://makersuite.google.com/app/apikey
-  const genAI = new GoogleGenerativeAI(API_KEY);
+  const genAI = useMemo(() => new GoogleGenerativeAI(API_KEY), [API_KEY]);
 
   const [conversation, setConversation] = useState([]);
   const [userInput, setUserInput] = useState('');
