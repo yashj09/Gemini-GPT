@@ -14,14 +14,16 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v2.4.0
         with:
-          node-version: '14.x'
+          node-version: "14.x"
       - name: Install dependencies
         run: npm install
       - name: Store API key in .env file
         run: echo "REACT_APP_API_KEY=${{ secrets.API_KEY }}" >> .env
-      - name: Build and deploy
-        run: |
-          npm run build
-          npm run deploy
+      - name: Build
+        run: npm run build
+      - name: Install serve
+        run: npm install -g serve
+      - name: Deploy
+        run: serve -s build
         env:
           REACT_APP_API_KEY: ${{ secrets.API_KEY }}
