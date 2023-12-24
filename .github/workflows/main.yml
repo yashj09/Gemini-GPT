@@ -24,6 +24,6 @@ jobs:
       - name: Install serve
         run: npm install -g serve
       - name: Deploy
-        run: serve -s build
+        run: npm run deploy
         env:
           REACT_APP_API_KEY: ${{ secrets.API_KEY }}
