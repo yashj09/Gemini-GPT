@@ -81,7 +81,7 @@ const App = () => {
 
   return (
     <div className="app">
-
+      <div className="right-heading"><h1>Gemini GPT</h1></div>
       <div className="github-button">
         <a href="https://github.com/yashj09/Gemini-GPT" target="blank">  <CiStar />Star this Repo</a>
       </div>
@@ -140,7 +140,9 @@ const App = () => {
               </a>
             </div>
             <div className="copyright">
-              Made with ❤️ By Yash Jain
+              <a href="https://github.com/yashj09/Gemini-GPT" target='blank'>
+                Made with ❤️ By Yash Jain
+              </a>
             </div>
           </div>
         </footer>

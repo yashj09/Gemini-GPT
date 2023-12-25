@@ -6,6 +6,32 @@
   height: 100vh;
 }
 
+.right-heading {
+  position: fixed;
+  top: 10px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.right-heading h1 {
+  font-size: 3vw;
+  color: #333;
+  margin-bottom: 5vh;
+}
+
+@media only screen and (max-width: 620px) {
+  .right-heading {
+    position: relative;
+    display: flex;
+    align-items: center;
+    left: -2vh;
+  }
+  .right-heading h1 {
+    font-size: 5vw;
+  }
+}
+
 .chat-container {
   width: 50vw;
   display: flex;
@@ -133,7 +159,7 @@ footer {
 }
 
 .footer-icon:hover,
-.copyright:hover {
+.copyright a:hover {
   color: rgb(16, 15, 15);
 }
 
@@ -171,4 +197,11 @@ footer {
     display: none;
     visibility: hidden;
   }
+}
+
+.copyright a {
+  /* background-color: #f2f2f2; */
+
+  color: #718096;
+  text-decoration: none;
 }
