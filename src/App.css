@@ -164,6 +164,7 @@ footer {
 }
 
 .copyright {
+  position: sticky;
   text-align: center;
   color: #a0aec0;
   margin-top: 1.5rem;
@@ -200,8 +201,6 @@ footer {
 }
 
 .copyright a {
-  /* background-color: #f2f2f2; */
-
   color: #718096;
   text-decoration: none;
 }
