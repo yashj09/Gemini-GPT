@@ -81,7 +81,10 @@ const App = () => {
 
   return (
     <div className="app">
-      <div className="right-heading"><h1>Gemini GPT</h1></div>
+      <div className="right-heading">
+        <a href="https://twitter.com/0xYash_Jain" target='blank' className="footer-icon">
+          <h1>Gemini GPT</h1>
+        </a></div>
       <div className="github-button">
         <a href="https://github.com/yashj09/Gemini-GPT" target="blank">  <CiStar />Star this Repo</a>
       </div>
