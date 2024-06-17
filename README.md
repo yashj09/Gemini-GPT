@@ -2,6 +2,8 @@
 
 Gemini GPT is an open-source AI chat bot powered by Google's Generative AI. Engage in dynamic conversations, ask questions, and receive intelligent responses.
 
+![image](https://github.com/yashj09/Gemini-GPT/assets/118172073/cc02ed44-5812-4d64-b20a-374bcc605e88)
+
 ## Features
 
 - Conversational AI using Google's Generative AI API
